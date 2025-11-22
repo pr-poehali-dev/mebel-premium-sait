@@ -107,7 +107,7 @@ const Index = () => {
               </button>
             ))}
           </div>
-          <Button className="bg-secondary hover:bg-secondary/90 text-primary">
+          <Button className="bg-secondary hover:bg-secondary/90 text-primary shadow-lg shadow-secondary/20">
             Заказать звонок
           </Button>
         </div>
@@ -150,14 +150,14 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl border border-border">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl shadow-secondary/5 border border-border/50">
                 <img 
                   src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200" 
                   alt="Премиум кухня"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-secondary text-primary p-6 rounded-lg shadow-xl border border-secondary/50">
+              <div className="absolute -bottom-6 -left-6 bg-secondary text-primary p-6 rounded-lg shadow-2xl shadow-secondary/30">
                 <div className="text-3xl font-heading font-bold">Гарантия 10 лет</div>
                 <div className="text-sm">на всю продукцию</div>
               </div>
@@ -180,7 +180,7 @@ const Index = () => {
             {categories.map((category, index) => (
               <Card 
                 key={category.id} 
-                className="group hover:shadow-xl transition-all duration-300 cursor-pointer border-2 hover:border-secondary overflow-hidden"
+                className="group hover:shadow-2xl hover:shadow-secondary/10 transition-all duration-300 cursor-pointer border border-border/50 hover:border-secondary overflow-hidden bg-card"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardContent className="p-8">

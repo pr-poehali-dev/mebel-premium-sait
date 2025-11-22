@@ -83,7 +83,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm z-50 border-b border-border">
+      <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="text-2xl font-heading font-bold text-primary">
             ЭЛИТ<span className="text-secondary">МЕБЕЛЬ</span>
@@ -150,14 +150,14 @@ const Index = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
+              <div className="aspect-[4/3] rounded-lg overflow-hidden shadow-2xl border border-border">
                 <img 
                   src="https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?w=1200" 
                   alt="Премиум кухня"
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-6 -left-6 bg-secondary text-primary p-6 rounded-lg shadow-xl">
+              <div className="absolute -bottom-6 -left-6 bg-secondary text-primary p-6 rounded-lg shadow-xl border border-secondary/50">
                 <div className="text-3xl font-heading font-bold">Гарантия 10 лет</div>
                 <div className="text-sm">на всю продукцию</div>
               </div>
@@ -166,7 +166,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-muted/30">
+      <section className="py-16 px-4 bg-card">
         <div className="container mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-heading font-bold text-primary mb-4">
@@ -254,18 +254,18 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-16 px-4 bg-primary text-white">
+      <section className="py-16 px-4 bg-card border-y border-border">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6">
+              <h2 className="text-4xl md:text-5xl font-heading font-bold mb-6 text-primary">
                 О компании
               </h2>
-              <p className="text-lg leading-relaxed mb-6 text-white/90">
+              <p className="text-lg leading-relaxed mb-6 text-muted-foreground">
                 Мы специализируемся на создании элитной корпусной мебели с 2009 года. 
                 За это время реализовали более 500 проектов для квартир, загородных домов и коммерческих объектов.
               </p>
-              <p className="text-lg leading-relaxed mb-8 text-white/90">
+              <p className="text-lg leading-relaxed mb-8 text-muted-foreground">
                 Работаем только с премиальными материалами и фурнитурой ведущих европейских производителей. 
                 Каждый проект — это индивидуальный подход и внимание к деталям.
               </p>
@@ -273,34 +273,34 @@ const Index = () => {
                 <div className="flex items-start gap-3">
                   <Icon name="Award" size={24} className="text-secondary mt-1" />
                   <div>
-                    <div className="font-heading font-bold text-xl">Гарантия 10 лет</div>
-                    <div className="text-sm text-white/80">На всю продукцию</div>
+                    <div className="font-heading font-bold text-xl text-primary">Гарантия 10 лет</div>
+                    <div className="text-sm text-muted-foreground">На всю продукцию</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Truck" size={24} className="text-secondary mt-1" />
                   <div>
-                    <div className="font-heading font-bold text-xl">Доставка</div>
-                    <div className="text-sm text-white/80">И установка бесплатно</div>
+                    <div className="font-heading font-bold text-xl text-primary">Доставка</div>
+                    <div className="text-sm text-muted-foreground">И установка бесплатно</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Ruler" size={24} className="text-secondary mt-1" />
                   <div>
-                    <div className="font-heading font-bold text-xl">Замер</div>
-                    <div className="text-sm text-white/80">Бесплатный выезд</div>
+                    <div className="font-heading font-bold text-xl text-primary">Замер</div>
+                    <div className="text-sm text-muted-foreground">Бесплатный выезд</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <Icon name="Palette" size={24} className="text-secondary mt-1" />
                   <div>
-                    <div className="font-heading font-bold text-xl">Дизайн-проект</div>
-                    <div className="text-sm text-white/80">3D визуализация</div>
+                    <div className="font-heading font-bold text-xl text-primary">Дизайн-проект</div>
+                    <div className="text-sm text-muted-foreground">3D визуализация</div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
+            <div className="aspect-[3/4] rounded-lg overflow-hidden shadow-2xl border border-border">
               <img 
                 src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800" 
                 alt="Наша команда"
@@ -373,43 +373,43 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-primary text-white py-12 px-4">
+      <footer className="bg-card border-t border-border py-12 px-4">
         <div className="container mx-auto">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <div className="text-2xl font-heading font-bold mb-4">
+              <div className="text-2xl font-heading font-bold mb-4 text-primary">
                 ЭЛИТ<span className="text-secondary">МЕБЕЛЬ</span>
               </div>
-              <p className="text-white/80 text-sm">
+              <p className="text-muted-foreground text-sm">
                 Премиальная корпусная мебель с 2009 года
               </p>
             </div>
             <div>
-              <div className="font-heading font-bold text-lg mb-4">Каталог</div>
-              <ul className="space-y-2 text-sm text-white/80">
+              <div className="font-heading font-bold text-lg mb-4 text-primary">Каталог</div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-secondary transition-colors">Кухни</a></li>
                 <li><a href="#" className="hover:text-secondary transition-colors">Шкафы распашные</a></li>
                 <li><a href="#" className="hover:text-secondary transition-colors">Шкафы-купе</a></li>
               </ul>
             </div>
             <div>
-              <div className="font-heading font-bold text-lg mb-4">Компания</div>
-              <ul className="space-y-2 text-sm text-white/80">
+              <div className="font-heading font-bold text-lg mb-4 text-primary">Компания</div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li><a href="#" className="hover:text-secondary transition-colors">О нас</a></li>
                 <li><a href="#" className="hover:text-secondary transition-colors">Портфолио</a></li>
                 <li><a href="#" className="hover:text-secondary transition-colors">Контакты</a></li>
               </ul>
             </div>
             <div>
-              <div className="font-heading font-bold text-lg mb-4">Контакты</div>
-              <ul className="space-y-2 text-sm text-white/80">
+              <div className="font-heading font-bold text-lg mb-4 text-primary">Контакты</div>
+              <ul className="space-y-2 text-sm text-muted-foreground">
                 <li>+7 (495) 123-45-67</li>
                 <li>info@elitmebel.ru</li>
                 <li>Москва, ул. Примерная, 1</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-white/20 mt-8 pt-8 text-center text-sm text-white/60">
+          <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
             © 2024 ЭлитМебель. Все права защищены.
           </div>
         </div>
